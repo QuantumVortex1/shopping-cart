@@ -6,6 +6,9 @@ import { version } from '../../../../package.json';
   imports: [Chip],
   selector: 'app-header',
   templateUrl: './header.html',
+  host: {
+    class: 'shrink-0 h-12'
+  }
 })
 export class Header {
   public version = version;
