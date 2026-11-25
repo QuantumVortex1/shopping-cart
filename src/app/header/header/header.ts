@@ -7,8 +7,8 @@ import { version } from '../../../../package.json';
   selector: 'app-header',
   templateUrl: './header.html',
   host: {
-    class: 'shrink-0 h-12'
-  }
+    class: 'shrink-0 h-12',
+  },
 })
 export class Header {
   public version = version;

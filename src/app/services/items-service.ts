@@ -6,7 +6,9 @@ export class ItemsService {
   private items: ShoppingCartItem[] = [];
   private allTags: string[] = [];
 
-  public getItems(filter?: (item: ShoppingCartItem) => boolean): ShoppingCartItem[] {
+  public getItems(
+    filter?: (item: ShoppingCartItem) => boolean,
+  ): ShoppingCartItem[] {
     if (filter) {
       return this.items.filter(filter);
     }

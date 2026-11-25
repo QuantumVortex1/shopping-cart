@@ -1,11 +1,10 @@
 <div class="flex flex-col w-full items-center gap-4">
-    @for (item of items; track item.id) {
-    <div class="w-1/2 border border-gray-300 rounded-2xl p-4 bg-gray-100">
-        <h3><a href="{{item.url}}" target="_blank">{{item.name}}</a></h3>
-        <p>Price: {{item.price}}</p>
-        <img src="{{item.imageUrl}}" alt="{{item.name}}"/>
-        <p>Tags: {{item.tags.join(', ')}}</p>   
-    </div> 
-}
+  @for (item of items; track item.id) {
+  <div class="w-1/2 border border-gray-300 rounded-2xl p-4 bg-gray-100">
+    <h3><a href="{{item.url}}" target="_blank">{{item.name}}</a></h3>
+    <p>Price: {{item.price}}</p>
+    <img src="{{item.imageUrl}}" alt="{{item.name}}" />
+    <p>Tags: {{item.tags.join(', ')}}</p>
+  </div>
+  }
 </div>
-    
